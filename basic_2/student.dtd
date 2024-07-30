@@ -1,0 +1,25 @@
+<!--
+  + 允许多个
+  * 0或多个
+  ? 0或1个
+    1个
+  #PCDATA 纯文本
+-->
+
+<!ELEMENT students (student+)>
+<!ELEMENT student (name,age,class,score)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT score (chinese,math,english)>
+<!ELEMENT chinese (#PCDATA)>
+<!ELEMENT math (#PCDATA)>
+<!ELEMENT english (#PCDATA)>
+<!ATTLIST student id CDATA "">
+<!--
+  ATTLIST 属性列表
+student 标签名
+id 属性名
+CDATA 纯文本
+"" 默认值
+-->

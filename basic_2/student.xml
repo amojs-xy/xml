@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE students SYSTEM "student.dtd">-->
+<students>
+    <student id="6666">
+        <name>Mike</name>
+        <age>18</age>
+        <class>1</class>
+        <score>
+            <chinese>87</chinese>
+            <math>77</math>
+            <english>91</english>
+        </score>
+    </student>
+    <student id="6667">
+        <name>Rose</name>
+        <age>17</age>
+        <class>2</class>
+        <score>
+            <chinese>91</chinese>
+            <math>92</math>
+            <english>94</english>
+        </score>
+    </student>
+</students>
+
+<!--
+  1. Idea检查
+  2. Chrome浏览器验证
+-->

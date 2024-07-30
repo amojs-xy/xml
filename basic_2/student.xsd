@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.xml.com/xml-schema"
+        elementFormDefault="qualified"
+>
+    <element name="students">
+        <complexType>
+            <sequence>
+                <element name="student" minOccurs="1" maxOccurs="3">
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string"/>
+                            <element name="age">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="14"/>
+                                        <maxInclusive value="20"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="class">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="1"/>
+                                        <maxInclusive value="10"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="score">
+                                <complexType>
+                                    <sequence>
+                                        <element name="chinese">
+                                            <simpleType>
+                                                <restriction base="integer">
+                                                    <minInclusive value="0"/>
+                                                    <maxInclusive value="100"/>
+                                                </restriction>
+                                            </simpleType>
+                                                    </element>
+                                                    <element name="math">
+                                                        <simpleType>
+                                                <restriction base="integer">
+                                                    <minInclusive value="0"/>
+                                                    <maxInclusive value="100"/>
+                                                </restriction>
+                                            </simpleType>
+                                                    </element>
+                                                    <element name="english">
+                                                        <simpleType>
+                                                <restriction base="integer">
+                                                    <minInclusive value="0"/>
+                                                    <maxInclusive value="100"/>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
